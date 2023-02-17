@@ -7,14 +7,10 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <title>@yield('title',config('app.name'))</title>
 
     <!-- Scripts -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite(['resources/sass/signup.scss'])
 </head>
 <body>
 <div>
