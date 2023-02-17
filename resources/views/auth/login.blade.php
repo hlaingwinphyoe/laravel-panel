@@ -2,9 +2,17 @@
 @section('title') Sign In @endsection
 
 @section('content')
+    <!-- dark mode btn -->
+    <div class="dark-mode-btn">
+        <button class="btn btn-link" id="darkMode">
+            <i class="fa-regular fa-moon" style="font-size: 20px" id="dark-mode"></i>
+        </button>
+    </div>
+    <!-- dark mode btn end -->
+
     <div class="container">
         <div class="row justify-content-center vh-100 align-items-center">
-            <div class="card shadow bg-img-2 border-0 h-75 overflow-hidden">
+            <div class="card shadow-sm bg-img-2 border-opacity-50 border h-75 overflow-hidden">
                 <div class="card-body">
                     <div class="row align-items-center h-100">
                         <div class="col-lg-6">
@@ -14,11 +22,15 @@
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
 
-                                <div class="row mb-3">
+                                <div class="row mb-4">
                                     <div class="col-md-7 offset-md-3">
-                                        <div class="form-floating">
-                                            <input type="email" name="email" class="form-control custom @error('email') is-invalid @enderror" id="email" placeholder="name@example.com">
-                                            <label for="email">Email address</label>
+                                        <div class="form">
+                                            <input type="email" name="email" class=" @error('email') is-invalid @enderror" autocomplete="off" required />
+                                            <label for="email" class="label-name">
+                                                <span class="content-name">
+                                                  Email Address
+                                                </span>
+                                            </label>
                                         </div>
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -28,21 +40,25 @@
                                     </div>
                                 </div>
 
-                                <div class="row mb-3">
+                                <div class="row mb-4">
                                     <div class="col-md-7 offset-md-3">
-                                        <div class="form-floating">
-                                            <input type="password" name="password" class="form-control custom @error('password') is-invalid @enderror" id="password" placeholder="Password">
-                                            <label for="password">Password</label>
+                                        <div class="form">
+                                            <input type="text" name="password" class=" @error('password') is-invalid @enderror" autocomplete="off" required />
+                                            <label for="password" class="label-name">
+                                                <span class="content-name">
+                                                  Password
+                                                </span>
+                                            </label>
                                         </div>
                                         @error('password')
                                         <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                                            <strong>{{ $message }}</strong>
+                                        </span>
                                         @enderror
                                     </div>
                                 </div>
 
-                                <div class="row mb-3">
+                                <div class="row mb-4">
                                     <div class="col-md-7 offset-md-3">
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" name="remember"

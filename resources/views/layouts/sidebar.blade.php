@@ -1,7 +1,8 @@
 <nav id="sidebar" class="sidebar js-sidebar">
-    <div class="sidebar-content js-simplebar">
-        <a class="sidebar-brand" href="index.html">
-            <span class="align-middle">AdminKit</span>
+    <div class="sidebar-content">
+        <a class="sidebar-brand text-center mt-3" href="{{ route('home') }}">
+            <img src="{{ asset('image/me.jpg') }}" class="avatar img-fluid rounded me-1" width="30" alt="{{ auth()->user()->name }}" />
+            <span class="text-white text-truncate fs-5">{{ auth()->user()->name }}</span>
         </a>
 
         <ul class="sidebar-nav">
@@ -9,6 +10,7 @@
            <x-menu-header header="Dashboard" />
 
             <x-menu-link class="fa-object-group" title="Dashboard" link="{{ route('home') }}" />
+            <x-menu-link class="fa-crop-simple" title="Sample" link="{{ route('sample') }}" />
 
             <div class="sidebar-item">
                 <a class="sub-btn sidebar-link">
@@ -43,6 +45,15 @@
             <x-menu-link class="fa-sign-in" title="Sign In" />
             <x-menu-link class="fa-sign-in-alt" title="Register" />
             <x-menu-link class="fa-user" title="Profile" />
+
+
+            <li class="sidebar-item position-fixed bottom-0 py-2 border-top border-light" style="width: 260px">
+                <a class="sidebar-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+               document.getElementById('logout-form').submit();
+            ">
+                    <i class="align-middle fa-solid fa-power-off text-danger"></i> <span class="align-middle">Logout</span>
+                </a>
+            </li>
 
 
         </ul>

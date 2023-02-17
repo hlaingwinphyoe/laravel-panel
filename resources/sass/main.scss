@@ -2,7 +2,7 @@
     align-items: stretch;
     display: flex;
     width: 100%;
-    background: $sidebar-bg;
+    //background: $sidebar-bg;
 }
 
 .content {
@@ -29,7 +29,7 @@
     min-width: 0;
     min-height: 100vh;
     transition: $sidebar-transition;
-    background: $body-bg;
+    //background: $body-bg;
     flex-direction: column;
     overflow: hidden;
     border-top-left-radius: 0;
@@ -45,9 +45,11 @@
     }
 }
 
-.navbar .avatar {
+.avatar {
     margin-top: -15px;
     margin-bottom: -15px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .navbar-nav {
@@ -126,7 +128,7 @@
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .navbar .avatar {
+    .avatar {
         max-height: 47px;
     }
 }

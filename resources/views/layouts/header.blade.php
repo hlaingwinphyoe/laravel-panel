@@ -1,10 +1,17 @@
-<nav class="navbar navbar-expand navbar-light navbar-bg">
-    <a class="sidebar-toggle js-sidebar-toggle text-decoration-none">
+<nav class="navbar navbar-expand navbar-light">
+    <a id="sideMenu" class="sidebar-toggle text-dark js-sidebar-toggle text-decoration-none">
         <i class="fa-solid fa-bars-staggered align-self-center fa-xl"></i>
     </a>
 
+    <h4 class="mb-0">
+        <a href="{{ route('home') }}" class="text-primary">
+            Code Panel
+        </a>
+    </h4>
+
     <div class="navbar-collapse collapse">
         <ul class="navbar-nav navbar-align">
+
             <li class="nav-item dropdown">
                 <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
                     <div class="position-relative">
@@ -137,13 +144,22 @@
                     </div>
                 </div>
             </li>
+
+            <li class="nav-item">
+                <button class="nav-icon btn btn-link" id="darkMode">
+                    <i class="fa-regular fa-moon fa-sm align-middle" id="dark-mode"></i>
+                </button>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
-                    <i class="align-middle fa-solid fa-cog"></i>
+                    <div class="position-relative">
+                        <i class="align-middle align-middle fa-regular fa-cog"></i>
+                    </div>
                 </a>
-
-                <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
-                    <img src="{{ asset('image/me.jpg') }}" class="avatar img-fluid rounded me-1" width="30" alt="{{ auth()->user()->name }}" /> <span class="text-dark">{{ auth()->user()->name }}</span>
+                <a class="nav-icon dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                    <div class="position-relative">
+                        <i class="align-middle fa-solid fa-cog fa-sm"></i>
+                    </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
                     <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>

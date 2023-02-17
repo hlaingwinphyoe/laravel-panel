@@ -9,6 +9,7 @@ $font-family-sans-serif:  'Montserrat', sans-serif;
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+@import "general";
 
 .bg-img::before{
     content: "";
@@ -18,12 +19,6 @@ $font-family-sans-serif:  'Montserrat', sans-serif;
     top: -10%;
     right: 40%;
     transform: translateY(-50%);
-    //background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
-
-    //background: #757F9A;  /* fallback for old browsers */
-    //background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
-    //background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     background: #8E54E9;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #4776E6, #8E54E9);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4776E6, #8E54E9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -91,15 +86,12 @@ $font-family-sans-serif:  'Montserrat', sans-serif;
     transform: scale(1.5);
 }
 
-.form-control.custom{
-    border: 0 !important;
-    border-bottom: 1px solid $gray-500 !important;
-    border-radius: 0 !important;
-    transition: 0.3s inherit;
+.dark-mode-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
 }
 
-.form-control.custom:focus{
-    outline: none !important;
-    border-bottom-color: $primary !important;
-    box-shadow: none !important;
+.form-control{
+    background: transparent !important;
 }

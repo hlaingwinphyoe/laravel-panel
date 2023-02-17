@@ -10,13 +10,14 @@
     <title>@yield('title',config('app.name'))</title>
 
     <!-- Scripts -->
-    @vite(['resources/sass/signup.scss'])
+    @vite(['resources/sass/signup.scss','resources/js/signup.js'])
 </head>
-<body>
+<body data-bs-theme="light" class="bg-body">
 <div>
     <main class="py-4">
         @yield('content')
     </main>
 </div>
+<script src="{{ asset('jquery.min.js') }}"></script>
 </body>
 </html>

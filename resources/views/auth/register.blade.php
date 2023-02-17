@@ -1,9 +1,18 @@
 @extends('layouts.guest')
 @section('title') Sign Up @endsection
 @section('content')
+
+    <!-- dark mode btn -->
+    <div class="dark-mode-btn">
+        <button class="btn btn-link" id="darkMode">
+            <i class="fa-regular fa-moon" style="font-size: 20px" id="dark-mode"></i>
+        </button>
+    </div>
+    <!-- dark mode btn end -->
+
     <div class="container">
         <div class="row justify-content-center vh-100 align-items-center">
-            <div class="card shadow bg-img border-0 h-75 overflow-hidden">
+            <div class="card shadow-sm bg-img border-opacity-50 border h-75 overflow-hidden">
                 <div class="card-body">
                     <div class="row align-items-center h-100">
                         <div class="col-lg-6">
