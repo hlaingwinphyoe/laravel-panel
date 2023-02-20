@@ -2,7 +2,7 @@
     <div class="sidebar-content">
         <a class="sidebar-brand text-center mt-3" href="{{ route('home') }}">
             <img src="{{ asset('image/me.jpg') }}" class="avatar img-fluid rounded me-1" width="30" alt="{{ auth()->user()->name }}" />
-            <span class="text-white text-truncate fs-5">{{ auth()->user()->name }}</span>
+            <span class="text-truncate fs-5">{{ auth()->user()->name }}</span>
         </a>
 
         <ul class="sidebar-nav">
@@ -14,19 +14,19 @@
 
             <div class="sidebar-item">
                 <a class="sub-btn sidebar-link">
-                    <i class="fas fa-arrow-right-long dropdown"></i>
+                    <i class="fas fa-arrow-down-long dropdown"></i>
                     Settings
                 </a>
                 <div class="sub-menu">
                     <ul class="list-unstyled">
                         <li class="sidebar-dropdown">
-                            <a href="{{ route('home') }}" class="text-decoration-none {{ route('home') === request()->url() ? 'active' : '' }}">
-                                <i class="fa-regular fa-circle fa-2xs me-2"></i> Left Sidebar
+                            <a href="{{ route('home') }}" class="text-decoration-none sidebar-dropdown-link {{ route('home') === request()->url() ? 'active' : '' }}">
+                                <i class="{{ route('home') === request()->url() ? 'fa-solid' : 'fa-regular' }} fa-circle fa-2xs me-2 text-primary"></i> Left Sidebar
                             </a>
                         </li>
                         <li class="sidebar-dropdown">
-                            <a href="#" class="text-decoration-none">
-                                <i class="fa-regular fa-circle fa-2xs me-2"></i> Horizontal Sidebar
+                            <a href="{{ route('sample') }}" class="text-decoration-none sidebar-dropdown-link {{ route('sample') === request()->url() ? 'active' : '' }}">
+                                <i class="{{ route('sample') === request()->url() ? 'fa-solid' : 'fa-regular' }} fa-circle fa-2xs me-2 text-primary"></i> Horizontal Sidebar
                             </a>
                         </li>
                     </ul>

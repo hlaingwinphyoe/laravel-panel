@@ -43,7 +43,7 @@
                                 <div class="row mb-4">
                                     <div class="col-md-7 offset-md-3">
                                         <div class="form">
-                                            <input type="text" name="password" class=" @error('password') is-invalid @enderror" autocomplete="off" required />
+                                            <input type="password" name="password" class=" @error('password') is-invalid @enderror" autocomplete="off" required />
                                             <label for="password" class="label-name">
                                                 <span class="content-name">
                                                   Password

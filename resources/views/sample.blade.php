@@ -4,7 +4,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 col-md-4">
                 <div class="">
                     <h4>
                         Form Input

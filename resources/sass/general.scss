@@ -51,7 +51,7 @@
 }
 .form input:focus + .label-name .content-name,
 .form input:valid + .label-name .content-name {
-    transform: translateY(-110%);
+    transform: translateY(-100%);
     font-size: 14px;
     left: 0px;
     color: $primary;

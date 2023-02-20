@@ -11,7 +11,7 @@
     display: flex;
     height: 100vh;
     flex-direction: column;
-    background: $sidebar-bg;
+    background: transparent;
 }
 
 .sidebar-nav {
@@ -34,7 +34,7 @@ a.sidebar-link {
     border-left-style: solid;
     border-left-width: 3px;
     color: $sidebar-link-color;
-    background: $sidebar-link-bg;
+    background: transparent;
     border-left-color: $sidebar-link-border-left-color;
 
     i,
@@ -49,21 +49,20 @@ a.sidebar-link {
 }
 
 .sidebar-link:hover {
-    color: $sidebar-link-hover-color;
-    background: $sidebar-link-hover-bg;
+    color: $primary;
     border-left-color: $sidebar-link-hover-border-left-color;
 
     i,
     svg {
-        color: $sidebar-link-icon-hover-color;
+        color: $primary !important;
     }
 }
 
 .sidebar-item.active > .sidebar-link,
 .sidebar-item.active .sidebar-link:hover {
     color: $sidebar-link-active-color;
-    background: $sidebar-link-active-bg;
-    border-left-color: $sidebar-link-active-border-left-color;
+    background: $sidebar-link-active-bg !important;
+    border-left-color: $sidebar-link-active-border-left-color !important;
 
     i,
     svg {
@@ -77,11 +76,11 @@ a.sidebar-link {
     font-size: $sidebar-brand-font-size;
     padding: $sidebar-brand-padding-y $sidebar-brand-padding-x;
     display: block;
-    color: $sidebar-brand-color;
+    //color: $sidebar-brand-color;
 
     &:hover {
         text-decoration: none;
-        color: $sidebar-brand-color;
+        //color: $sidebar-brand-color;
     }
 
     &:focus {
@@ -144,8 +143,8 @@ a.sidebar-link {
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    color: rgba(233, 236, 239, 0.5);
-    background: #222E3C;
+    color: $sidebar-dropdown-color;
+    background: transparent;
     border-left-color: transparent;
     margin-left: 35px;
     font-size: 13.8px;
@@ -158,25 +157,45 @@ a.sidebar-link {
 .sidebar-dropdown a{
     font-weight: 400;
     cursor: pointer;
-    color: rgba(233, 236, 239, 0.5);
-}
-
-.sidebar-dropdown a.active{
-    color: $primary;
+    font-size: .950em;
+    color: $sidebar-dropdown-color;
 }
 
 .sidebar-dropdown a:hover{
-    color: $primary;
-    background: #222E3C;
+    color: $primary !important;
     border-left-color: transparent;
-}
-
-.rotate {
-    transform: rotate(90deg);
-    transition: 0.3s ease-in-out;
 }
 
 .sidebar-item a .dropdown{
     transition: 0.3s ease;
+}
+
+.sub-on{
+    display: block !important;
+}
+
+
+/**  dark mode sidebar */
+
+.dark-sidebar{
+    background: #13151e !important;
+
+    .sidebar-brand,
+    .sidebar-dropdown-link i{
+        color: $primary !important;
+    }
+
+    .sidebar-link,
+    a.sidebar-link,
+    i,
+    svg,
+    .sidebar-dropdown a{
+        color: rgb($gray-300, 0.8) !important;
+    }
+
+    .sidebar-dropdown a:hover,
+    .sidebar-link:hover{
+        color: $primary !important;
+    }
 }
 

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand navbar-light">
+<nav class="navbar navbar-expand navbar-light shadow-sm">
     <a id="sideMenu" class="sidebar-toggle text-dark js-sidebar-toggle text-decoration-none">
         <i class="fa-solid fa-bars-staggered align-self-center fa-xl"></i>
     </a>
@@ -19,7 +19,7 @@
                         <span class="indicator">4</span>
                     </div>
                 </a>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0 shadow-sm" aria-labelledby="alertsDropdown">
                     <div class="dropdown-menu-header">
                         4 New Notifications
                     </div>
@@ -83,7 +83,7 @@
                         <i class="align-middle fa-regular fa-message fa-sm"></i>
                     </div>
                 </a>
-                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown">
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0 shadow-sm" aria-labelledby="messagesDropdown">
                     <div class="dropdown-menu-header">
                         <div class="position-relative">
                             4 New Messages
@@ -162,10 +162,10 @@
                     </div>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
                     <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="index.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
+                    <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
                     <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="{{ route('logout') }}"

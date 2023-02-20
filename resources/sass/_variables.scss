@@ -1,5 +1,5 @@
 // Body
-$body-bg: #f8fafc;
+$body-bg: #ffffff;
 
 // Typography
 $line-height-base: 1.6;
@@ -53,7 +53,6 @@ $gray-900: #212529 !default;
 $black: #000 !default;
 
 // Body
-$body-bg: #f5f7fb !default;
 $body-color: $gray-700 !default;
 
 // Border radius
@@ -71,7 +70,7 @@ $navbar-box-shadow: 0 0 2rem 0 rgba($gray-900, .1) !default;
 // Navbar brand
 $navbar-brand-padding-y: $spacer*0.875 !default;
 $navbar-brand-padding-x: 0 !default;
-$navbar-brand-color: $gray-100 !default;
+$navbar-brand-color: $gray-900 !default;
 $navbar-brand-font-weight: $font-weight-normal !default;
 $navbar-brand-font-size: 1.15rem !default;
 $navbar-brand-icon-color: $primary !default;
@@ -85,7 +84,7 @@ $content-padding-mobile: 1.5rem 1.5rem .75rem !default;
 // Sidebar general
 $sidebar-width: 260px !default;
 $sidebar-transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out !default;
-$sidebar-bg: #222E3C !default;
+$sidebar-bg: #f8f8fb !default;
 
 // Sidebar brand
 $sidebar-brand-padding-y: 1.15rem !default;
@@ -97,29 +96,27 @@ $sidebar-brand-color: $gray-100 !default;
 // Sidebar header
 $sidebar-header-padding: 1.5rem 1.5rem 0.375rem !default;
 $sidebar-header-font-size: $font-size-sm !default;
-$sidebar-header-color: $gray-400 !default;
+$sidebar-header-color: #7e8891 !default;
 
 // Sidebar link
 $sidebar-link-padding: .625rem 1.625rem !default;
 $sidebar-link-font-weight: 400 !default;
-$sidebar-link-bg: #222E3C !default;
-$sidebar-link-color: rgba($gray-200, 0.5) !default;
+$sidebar-link-color: #424242 !default;
 $sidebar-link-border-left-color: transparent !default;
 
+$sidebar-dropdown-color: #232323 !default;
+
 $sidebar-link-hover-font-weight: $font-weight-normal !default;
-$sidebar-link-hover-bg: #222E3C !default;
-$sidebar-link-hover-color: #{rgba($gray-200, 0.75)} !default;
 $sidebar-link-hover-border-left-color: transparent !default;
 
 $sidebar-link-active-font-weight: $font-weight-normal !default;
 $sidebar-link-active-bg: #{linear-gradient(90deg, rgba($primary,0.1) 0%, rgba($primary,0.0875) 50%, rgba($black, 0) 100%)} !default;
-$sidebar-link-active-color: $gray-200 !default;
+$sidebar-link-active-color: #424242 !default;
 $sidebar-link-active-border-left-color: $primary !default;
 
 // Sidebar link icon
-$sidebar-link-icon-color: #{rgba($gray-200, 0.5)} !default;
-$sidebar-link-icon-hover-color: #{rgba($gray-200, 0.75)} !default;
-$sidebar-link-icon-active-color: $gray-200 !default;
+$sidebar-link-icon-color: #424242 !default;
+$sidebar-link-icon-active-color: #424242 !default;
 
 // Transitions
 $transition-appearance: background .4s ease-in-out, color .4s ease-in-out !default;

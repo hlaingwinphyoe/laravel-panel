@@ -29,9 +29,13 @@
 
                                 <div class="row mb-4">
                                     <div class="col-md-7 offset-md-4">
-                                        <div class="form-floating">
-                                            <input id="name" type="text" class="form-control custom @error('name') is-invalid @enderror" name="name" placeholder="Username" value="{{ old('name') }}" required autocomplete="name" autofocus>
-                                            <label for="name">Username</label>
+                                        <div class="form">
+                                            <input type="text" name="name" class=" @error('name') is-invalid @enderror" value="{{ old('name') }}" autocomplete="off" required />
+                                            <label for="name" class="label-name">
+                                                <span class="content-name">
+                                                  Username
+                                                </span>
+                                            </label>
                                         </div>
                                         @error('name')
                                         <span class="invalid-feedback" role="alert">
@@ -43,9 +47,13 @@
 
                                 <div class="row mb-4">
                                     <div class="col-md-7 offset-md-4">
-                                        <div class="form-floating">
-                                            <input type="email" name="email" class="form-control custom @error('email') is-invalid @enderror" id="email" placeholder="name@example.com">
-                                            <label for="email">Email address</label>
+                                        <div class="form">
+                                            <input type="email" name="email" class=" @error('email') is-invalid @enderror" autocomplete="off" required />
+                                            <label for="email" class="label-name">
+                                                <span class="content-name">
+                                                  Email Address
+                                                </span>
+                                            </label>
                                         </div>
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
@@ -57,28 +65,36 @@
 
                                 <div class="row mb-4">
                                     <div class="col-md-7 offset-md-4">
-                                        <div class="form-floating">
-                                            <input type="password" name="password" class="form-control custom  @error('password') is-invalid @enderror" id="password" placeholder="Password">
-                                            <label for="password">Password</label>
+                                        <div class="form">
+                                            <input type="password" name="password" class=" @error('password') is-invalid @enderror" autocomplete="off" required />
+                                            <label for="password" class="label-name">
+                                                <span class="content-name">
+                                                  Password
+                                                </span>
+                                            </label>
                                         </div>
                                         @error('password')
                                         <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                                            <strong>{{ $message }}</strong>
+                                        </span>
                                         @enderror
                                     </div>
                                 </div>
 
                                 <div class="row mb-4">
                                     <div class="col-md-7 offset-md-4">
-                                        <div class="form-floating">
-                                            <input type="password" name="password_confirmation" class="form-control custom  @error('password_confirmation') is-invalid @enderror" id="password_confirmation" placeholder="Confirm Password">
-                                            <label for="password_confirmation">Confirm Password</label>
+                                        <div class="form">
+                                            <input type="password" name="password_confirmation" class=" @error('password_confirmation') is-invalid @enderror" autocomplete="off" required />
+                                            <label for="password_confirmation" class="label-name">
+                                                <span class="content-name">
+                                                  Password
+                                                </span>
+                                            </label>
                                         </div>
                                         @error('password_confirmation')
                                         <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
+                                            <strong>{{ $message }}</strong>
+                                        </span>
                                         @enderror
                                     </div>
                                 </div>

@@ -20,53 +20,11 @@ const initializeSidebarCollapse = () => {
 // Wait until page is loaded
 document.addEventListener("DOMContentLoaded", () => initialize());
 
-// document.querySelector('.sub-btn').addEventListener('click',function (){
-//     console.log(this.nextElementSibling)
-// })
-
-// var linkToggle = document.querySelectorAll('.js-toggle');
-//
-// for(let i = 0; i < linkToggle.length; i++){
-//
-//     linkToggle[i].addEventListener('click', function(event){
-//
-//         event.preventDefault();
-//
-//         var container = document.getElementById(this.dataset.container);
-//         var icon = document.querySelector('.fa-arrow-right-long');
-//
-//         if (!container.classList.contains('active')) {
-//
-//             container.classList.add('active');
-//             container.style.height = 'auto';
-//             icon.classList.add('rotate')
-//
-//             var height = container.clientHeight + 'px';
-//
-//             container.style.height = '0px';
-//
-//             setTimeout(function () {
-//                 container.style.height = height;
-//             }, 0);
-//
-//         } else {
-//
-//             container.style.height = '0px';
-//
-//             container.addEventListener('transitionend', function () {
-//                 container.classList.remove('active');
-//                 icon.classList.remove('rotate');
-//             }, {
-//                 once: true
-//             });
-//
-//         }
-//
-//     });
-//
-// }
-
 $('.sub-btn').click(function(){
+    $(this).next('.sub-menu').removeClass('sub-on')
     $(this).next('.sub-menu').slideToggle();
-    $(this).find('.dropdown').toggleClass('rotate');
 });
+
+if ($('.sidebar-dropdown-link').hasClass('active')){
+    $('.sub-menu').toggleClass('sub-on');
+}

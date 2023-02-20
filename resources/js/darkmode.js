@@ -5,6 +5,10 @@ function darkMode(){
     body.setAttribute('data-bs-theme','dark');
     document.getElementById('sideMenu').classList.add('text-white');
     document.querySelector('#dark-mode').setAttribute('class','fa-solid fa-sun fa-sm align-middle');
+    document.querySelectorAll('.form input').forEach(ele => ele.classList.add('input-color'));
+
+    // add dark-sidebar
+    document.querySelector('.sidebar').classList.add('dark-sidebar');
 
     if (body.getAttribute('data-bs-theme') === 'dark'){
         theme = 'dark';
@@ -22,6 +26,11 @@ function lightMode(){
     body.setAttribute('data-bs-theme','light');
     document.getElementById('sideMenu').classList.remove('text-white');
     document.querySelector('#dark-mode').setAttribute('class','fa-regular fa-moon fa-sm align-middle');
+    document.querySelectorAll('.form input').forEach(ele => ele.classList.remove('input-color'));
+
+    // remove dark-sidebar
+    document.querySelector('.sidebar').classList.remove('dark-sidebar');
+
 
     if (body.getAttribute('data-bs-theme') === 'light'){
         theme = 'light';
