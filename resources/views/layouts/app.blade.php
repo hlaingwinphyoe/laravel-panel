@@ -27,5 +27,6 @@
        </div>
     </div>
     <script src="{{ asset('jquery.min.js') }}"></script>
+    @stack('scripts')
 </body>
 </html>

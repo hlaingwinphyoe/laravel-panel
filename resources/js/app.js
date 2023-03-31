@@ -1,5 +1,6 @@
 import './bootstrap';
 import './sidebar'
+import 'laravel-datatables-vite';
 
 // dark mode
 import './darkmode'

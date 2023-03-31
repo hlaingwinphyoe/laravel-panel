@@ -35,10 +35,10 @@
 
             <x-menu-header header="Tools & Components" />
 
-            <x-menu-link class="fa-mobile-button" title="Buttons" />
+            <x-menu-link class="fa-mobile-button" title="Buttons" link="{{ route('buttons') }}" />
             <x-menu-link class="fa-check-to-slot" title="Forms" />
             <x-menu-link class="fa-id-card" title="Cards" />
-            <x-menu-link class="fa-hackerrank" title="Typography" />
+            <x-menu-link class="fa-table" title="Tables" link="{{ route('tables') }}" />
 
             <x-menu-header header="System Setting" />
 

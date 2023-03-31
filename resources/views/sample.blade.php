@@ -11,7 +11,7 @@
                     </h4>
                     <div class="">
                         <!-- Custom Form Control -->
-                        <div class="form">
+                        <div class="form mb-4">
                             <input type="text" name="text" autocomplete="off" required />
                             <label for="text" class="label-name">
                                 <span class="content-name">
@@ -20,7 +20,6 @@
                             </label>
                         </div>
                         <!-- Custom Form Control End -->
-
                     </div>
                 </div>
             </div>

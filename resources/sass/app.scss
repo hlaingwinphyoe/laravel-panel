@@ -12,6 +12,14 @@ $font-family-sans-serif:  'Montserrat', sans-serif;
 @import "main";
 @import "sidebar";
 @import "general";
+@import "button";
+@import "border-btn";
+
+// DataTables
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import "datatables.net-bs5/css/dataTables.bootstrap5.min.css";
+@import "datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css";
+@import 'datatables.net-select-bs5/css/select.bootstrap5.css';
 
 a{
     text-decoration: none !important;

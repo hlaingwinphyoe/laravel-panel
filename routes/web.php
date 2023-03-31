@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -22,3 +23,7 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/sample',[HomeController::class,'sample'])->name('sample');
+
+
+Route::get('/buttons',[DashboardController::class,'buttons'])->name('buttons');
+Route::get('/tables',[DashboardController::class,'tables'])->name('tables');

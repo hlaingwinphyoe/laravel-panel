@@ -1,0 +1,155 @@
+.btn-border{
+    position: relative;
+    transition: 0.3s;
+    margin-right: 13px; // for optional ui
+}
+
+.btn-border::after, .btn-border::before
+{
+    content: "";
+    border: 2px solid #111;
+    border-radius: 4px;
+    position: absolute;
+    width: calc(100% - -5px);
+    height: calc(100% - 1px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btn-border:hover::after{
+    transform: translate(-4px,-4px);
+}
+
+// .btn-border:hover::before{
+//     transform: translate(4px,4px);
+// }
+
+// primary
+.primary{
+    color: #fff !important;
+}
+
+.btn-border.primary::after
+{
+    content: "";
+    border: 0 !important;
+    background: $primary;
+}
+
+.btn-border.primary::before
+{
+    content: "";
+    border: 1px solid $primary !important;
+}
+
+// secondary
+.secondary{
+    color: #fff !important;
+}
+
+.btn-border.secondary::after
+{
+    content: "";
+    border: 0 !important;
+    background: $secondary;
+}
+
+.btn-border.secondary::before
+{
+    content: "";
+    border: 1px solid $secondary !important;
+}
+
+// success
+.success{
+    color: #fff !important;
+}
+
+.btn-border.success::after
+{
+    content: "";
+    border: 0 !important;
+    background: $success;
+}
+
+.btn-border.success::before
+{
+    content: "";
+    border: 1px solid $success !important;
+}
+
+// danger
+.danger{
+    color: #fff !important;
+}
+
+.btn-border.danger::after
+{
+    content: "";
+    border: 0 !important;
+    background: $danger;
+}
+
+.btn-border.danger::before
+{
+    content: "";
+    border: 1px solid $danger !important;
+}
+
+// warning
+.warning{
+    color: #000 !important;
+}
+
+.btn-border.warning::after
+{
+    content: "";
+    border: 0 !important;
+    background: $warning;
+}
+
+.btn-border.warning::before
+{
+    content: "";
+    border: 1px solid $warning !important;
+}
+
+// info
+.info{
+    color: #fff !important;
+}
+
+.btn-border.info::after
+{
+    content: "";
+    border: 0 !important;
+    background: $info;
+}
+
+.btn-border.info::before
+{
+    content: "";
+    border: 1px solid $info !important;
+}
+
+// dark
+.dark{
+    color: #fff !important;
+}
+
+.btn-border.dark::after
+{
+    content: "";
+    border: 0 !important;
+    background: $dark;
+}
+
+.btn-border.dark::before
+{
+    content: "";
+    border: 1px solid $dark !important;
+}
+
+

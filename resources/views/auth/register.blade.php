@@ -24,7 +24,7 @@
                             <div class="">
                                 <h1 class="text-primary text-center mb-4">Welcome!</h1>
                             </div>
-                            <form method="POST" action="{{ route('login') }}">
+                            <form method="POST" action="{{ route('register') }}">
                                 @csrf
 
                                 <div class="row mb-4">
