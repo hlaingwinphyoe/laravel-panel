@@ -11,9 +11,12 @@ $font-family-sans-serif:  'Montserrat', sans-serif;
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 @import "main";
 @import "sidebar";
+
+// Components
 @import "general";
-@import "button";
-@import "border-btn";
+@import "button/float-btn.scss";
+@import "button/border-btn";
+@import "card";
 
 // DataTables
 @import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -27,4 +30,10 @@ a{
 
 .form-control{
     background: transparent !important;
+}
+
+.btn{
+    text-transform: uppercase !important;
+    font-size: 13px;
+    // letter-spacing: 0.7px;
 }

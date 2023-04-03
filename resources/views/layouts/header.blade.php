@@ -146,9 +146,9 @@
             </li>
 
             <li class="nav-item">
-                <button class="nav-icon btn btn-link" id="darkMode">
+                <a href="#" class="nav-icon" id="darkMode">
                     <i class="fa-regular fa-moon fa-sm align-middle" id="dark-mode"></i>
-                </button>
+                </a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">

@@ -1,0 +1,57 @@
+.btn-float {
+    // width: 118px;
+    padding: $btn-padding-y $btn-padding-x;
+    height: 40px;
+    font-size: 13px;
+    text-transform: uppercase;
+    // letter-spacing: 2.5px;
+    color: #fff;
+    background-color: #fff;
+    border: none;
+    // border-radius: 45px;
+    border-radius: 0.25rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+  
+.btn-float:hover {
+    //box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+.btn-float.primary {
+    background-color: $primary;
+}
+
+.btn-float.secondary {
+    background-color: $secondary;
+}
+
+.btn-float.info {
+    background-color: $info;
+}
+
+.btn-float.success {
+    background-color: $success;
+}  
+
+.btn-float.danger {
+    background-color: $danger;
+}
+
+.btn-float.warning {
+    color: $dark;
+    background-color: $warning;
+}
+
+.btn-float.dark {
+    background-color: $dark;
+}
+
+.btn-float.light {
+    color: $dark;
+    background-color: $light;
+}

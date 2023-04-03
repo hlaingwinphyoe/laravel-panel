@@ -5,8 +5,8 @@
     <div class="row">
         <div class="col-12">
 
-            <div class="mb-5">
-                <h4>Custom Button 1</h4>
+            <div class="mb-4">
+                <h4>Original Button</h4>
                 <button type="button" class="btn btn-primary">Primary</button>
                 <button type="button" class="btn btn-secondary">Secondary</button>
                 <button type="button" class="btn btn-success">Success</button>
@@ -17,8 +17,10 @@
                 <button type="button" class="btn btn-dark">Dark</button>
             </div>
 
-            <div class="mb-5">
-                <h4>Custom Button 2</h4>
+            <hr>
+
+            <div class="mb-4">
+                <h4>Border Button</h4>
                 <button class="btn btn-border primary">Primary</button>
                 <button class="btn btn-border secondary">Secondary</button>
                 <button class="btn btn-border success">Success</button>
@@ -27,11 +29,32 @@
                 <button class="btn btn-border info">Info</button>
                 <button class="btn btn-border">Light</button>
                 <button class="btn btn-border dark">Dark</button>
+
+                <br>
+                <br>
+
+                <button class="btn btn-outline primary">Primary</button>
+                <button class="btn btn-outline secondary">Secondary</button>
+                <button class="btn btn-outline success">Success</button>
+                <button class="btn btn-outline danger">Danger</button>
+                <button class="btn btn-outline warning">Warning</button>
+                <button class="btn btn-outline info">Info</button>
+                <button class="btn btn-outline">Light</button>
+                <button class="btn btn-outline dark">Dark</button>
             </div>
 
-            <div class="mb-5">
-                <h4>Custom Button 3</h4>
-                <button class="btn3-primary">Submit</button>
+            <hr>
+
+            <div class="mb-4">
+                <h4>Float Button</h4>
+                <button class="btn-float primary">Primary</button>
+                <button class="btn-float secondary">Secondary</button>
+                <button class="btn-float success">Success</button>
+                <button class="btn-float danger">Danger</button>
+                <button class="btn-float warning">Warning</button>
+                <button class="btn-float info">Info</button>
+                <button class="btn-float light">Light</button>
+                <button class="btn-float dark">Dark</button>
             </div>
             
         </div>
